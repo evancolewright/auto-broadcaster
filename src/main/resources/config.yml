@@ -1,0 +1,24 @@
+# ===================================================
+# AutoBroadcaster v1.0
+#
+# Author: Evan Wright (EvanTheSurfer)
+# Github: https://github.com/evancolewright/auto-broadcaster
+# ===================================================
+
+broadcast_interval: 1  # How often should the plugin broadcast a message (in minutes)
+sound:
+  enabled: true
+  value: ORB_PICKUP
+messages:
+  1:
+    - "&d&m-----------------------------------------------"
+    - "&fPurchase a &nRank&r &fon our Buycraft for some awesome perks! &8- &dstore.myserver.com"
+    - "&d&m-----------------------------------------------"
+  2:
+    - "&d&m-----------------------------------------------"
+    - "&fFollow us on &b&nTwitter&r &f to stay up-to-date on server updates &8- &d@myserver "
+    - "&d&m-----------------------------------------------"
+  3:
+    - "&d&m-----------------------------------------------"
+    - "&f MyServer is now running Spigot &d1.17&r&f.  Report bugs on our forums &8- &dforums.myserver.com"
+    - "&d&m-----------------------------------------------"
