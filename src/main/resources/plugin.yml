@@ -1,7 +1,6 @@
 name: AutoBroadcaster
 version: ${project.version}
 main: com.github.evancolewright.autobroadcaster.AutoBroadcaster
-api-version: 1.17
 softdepend: [ PlaceholderAPI ]
 authors: [ evancolewright ]
 description: A basic multi-line auto-broadcaster with PAPI support.
