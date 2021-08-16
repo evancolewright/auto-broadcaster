@@ -18,7 +18,7 @@ public class AutoBroadcasterRunnable implements Runnable
     private final List<List<String>> broadcastMessages = new ArrayList<>();
 
     private boolean soundEnabled;
-    private Sound sound;
+//    private Sound sound;
 
     int currentPos = 0;
     int maxPos;
@@ -37,12 +37,10 @@ public class AutoBroadcasterRunnable implements Runnable
     @Override
     public void run()
     {
+        //            if (soundEnabled) player.playSound(player.getLocation(), sound, 2f, 2f);
         for (Player player : Bukkit.getOnlinePlayers())
-        {
             formatList(broadcastMessages.get(currentPos), player)
                     .forEach(player::sendMessage);
-            if (soundEnabled) player.playSound(player.getLocation(), sound, 2f, 2f);
-        }
         if (++currentPos == maxPos + 1) currentPos = 0;
     }
 
@@ -67,8 +65,8 @@ public class AutoBroadcasterRunnable implements Runnable
 
     private void loadSoundSettings()
     {
-        soundEnabled = configuration.getBoolean("sound.enabled");
-        sound = Sound.valueOf(configuration.getString("sound.value"));
+//        soundEnabled = configuration.getBoolean("sound.enabled");
+//        sound = Sound.valueOf(configuration.getString("sound.value"));
     }
 
 }

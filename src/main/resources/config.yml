@@ -6,9 +6,6 @@
 # ===================================================
 
 broadcast_interval: 1  # How often should the plugin broadcast a message (in minutes)
-sound:
-  enabled: true
-  value: ORB_PICKUP
 messages:
   1:
     - "&d&m-----------------------------------------------"
